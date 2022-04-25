@@ -13,7 +13,7 @@ Create a virtualenv and activate it :
 
 Or on Windows cmd :
 
-    $ py -3 -m venv venv
+    $ python3 -m venv venv
     $ venv\Scripts\activate.bat
     $ pip install -r requirements.txt
 
@@ -28,6 +28,14 @@ Run
     $ export FLASK_ENV=development
     $ flask init-db
     $ flask run
+
+Or on Windows cmd :
+
+    $ SET FLASK_APP=sales
+    $ SET FLASK_ENV=development
+    $ flask init-db
+    $ flask run
+
 Open http://127.0.0.1:5000 in a browser. Use search bar to filter out data.
 
 Test
@@ -35,3 +43,9 @@ Test
 
     $ pip install '.[test]'
     $ pytest
+
+Or on Windows cmd :
+
+    $ pip install .[test]
+    $ pytest
+
