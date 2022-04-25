@@ -1,0 +1,3 @@
+include sales/schema.sql
+graft sales/templates
+global-exclude *.pyc
